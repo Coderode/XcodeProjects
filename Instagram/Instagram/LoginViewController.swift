@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import FirebaseAuth
 
 extension UIView {
     func addTopBorderWithColor(color: UIColor, width: CGFloat) {
@@ -55,32 +55,18 @@ extension UITextField {
 
 
 class LoginViewController: UIViewController {
-    
-    
     @IBOutlet weak var emailText: UITextField!
-    
     @IBOutlet weak var passwordText: UITextField!
-    
-    
     @IBOutlet weak var loginButton: UIButton!
-    
-    
-    
-    
-    @IBOutlet weak var bottom: UIView!
-    
+    @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var leftView: UIView!
-    
-    
     @IBOutlet weak var rightView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //passwordText.text
-        
         passwordText.setPadding()
         emailText.setPadding()
-        bottom.addTopBorderWithColor(color: UIColor.lightGray, width: 1)
+        bottomView.addTopBorderWithColor(color: UIColor.lightGray, width: 1)
         leftView.addTopBorderWithColor(color: UIColor.lightGray, width: 1)
         rightView.addTopBorderWithColor(color: UIColor.lightGray, width: 1)
         

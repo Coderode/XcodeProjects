@@ -8,11 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var emailTextField: MyTextField!
+    
+    
+    @IBOutlet weak var passwordTextField: MyTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
+        emailTextField.text = ""
+        passwordTextField.text = ""
     }
+    
+    
 
 
 }
