@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L5V-zh-b0S">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Nt9-WP-PwO">
+            <objects>
+                <viewController id="L5V-zh-b0S" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wfr-Hq-KaD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYW-z9-9pK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAO-k3-MOS">
+                                <rect key="frame" x="0.0" y="432" width="320" height="48"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fdv-6C-2wn"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="fdv-6C-2wn" firstAttribute="bottom" secondItem="GAO-k3-MOS" secondAttribute="bottom" id="1Es-B2-rAm"/>
+                            <constraint firstItem="GAO-k3-MOS" firstAttribute="height" secondItem="wfr-Hq-KaD" secondAttribute="height" multiplier="0.1" id="4c7-pj-hMw"/>
+                            <constraint firstItem="pYW-z9-9pK" firstAttribute="top" secondItem="fdv-6C-2wn" secondAttribute="top" id="6KR-dF-jK1"/>
+                            <constraint firstItem="fdv-6C-2wn" firstAttribute="trailing" secondItem="GAO-k3-MOS" secondAttribute="trailing" id="EXX-wm-8He"/>
+                            <constraint firstItem="pYW-z9-9pK" firstAttribute="height" secondItem="wfr-Hq-KaD" secondAttribute="height" multiplier="0.1" id="G3S-b3-Hzh"/>
+                            <constraint firstItem="pYW-z9-9pK" firstAttribute="leading" secondItem="fdv-6C-2wn" secondAttribute="leading" id="INh-6j-J00"/>
+                            <constraint firstItem="pYW-z9-9pK" firstAttribute="top" secondItem="fdv-6C-2wn" secondAttribute="top" id="Lib-li-cdS"/>
+                            <constraint firstItem="GAO-k3-MOS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pYW-z9-9pK" secondAttribute="bottom" constant="384" id="h4T-hR-ZRc"/>
+                            <constraint firstItem="fdv-6C-2wn" firstAttribute="trailing" secondItem="pYW-z9-9pK" secondAttribute="trailing" id="n05-K0-cOA"/>
+                            <constraint firstItem="GAO-k3-MOS" firstAttribute="leading" secondItem="fdv-6C-2wn" secondAttribute="leading" id="sib-QL-oj4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOn-AT-M37" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189" y="62"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
